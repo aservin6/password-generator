@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu Mono", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.app {
+  background-color: #424874;
+  height: 100vh;
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.password-generator {
+  width: 300px;
+  background-color: #a6b1e1;
+  color: #424874;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.password-container {
+  display: flex;
+  align-items: center;
+  background: #f4eeff;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.password {
+  color: #424874;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-inline: 1rem;
+  margin: 0;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.password-copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #424874;
+  padding-right: 1.2rem;
+  margin-left: auto;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+}
+
+.password-form > div {
+  margin-block: 0.5rem;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number-input {
+  background-color: #f4eeff;
+  border: none;
+  width: 40px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+}
+
+.generate-password-btn {
+  background-color: #f4eeff;
+  border: none;
+  color: #424874;
+  cursor: pointer;
+  padding: 0.625rem;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+.generate-password-btn:hover {
+  background: #424874;
+  color: #f4eeff;
+}
+
+.generate-password-btn:focus {
+    background: #424874;
+    color: #f4eeff;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.generate-password-btn:active {
+  background: #f4eeff;
+  color: #424874;
 }

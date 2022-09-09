@@ -1,0 +1,31 @@
+.snackbar {
+    position: absolute;
+    background: #f4eeff;
+    color: #424874;
+    font-weight: bold;
+    font-size: 1.125rem;
+    top: 5%;
+    outline: 2px solid red;
+    padding: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+}
+
+.error-shake {
+    animation: shake .1s;
+}
+
+@keyframes shake {
+    0% { transform: translate(-51%, 0) rotate(0deg); }
+    10% { transform: translate(-49%, 0) rotate(-1deg); }
+    20% { transform: translate(-47%, 0) rotate(1deg); }
+    30% { transform: translate(-53%, 0) rotate(0deg); }
+    40% { transform: translate(-51%, 0) rotate(1deg); }
+    50% { transform: translate(-49%, 0) rotate(-1deg); }
+    60% { transform: translate(-47%, 0) rotate(0deg); }
+    70% { transform: translate(-53%, 0) rotate(-1deg); }
+    80% { transform: translate(-49%, 0) rotate(1deg); }
+    90% { transform: translate(-51%, 0) rotate(0deg) ; }
+    100% { transform: translate(-48%, 0) rotate(-1deg); }
+  }
