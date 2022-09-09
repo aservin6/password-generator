@@ -87,11 +87,6 @@ body {
   color: #f4eeff;
 }
 
-.generate-password-btn:focus {
-    background: #424874;
-    color: #f4eeff;
-  }
-
 .generate-password-btn:active {
   background: #f4eeff;
   color: #424874;
